@@ -104,6 +104,12 @@ img {
             var(--first-color-dark) 100%);
 }
 
+.section-title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 4.25rem;
+}
+
 .container {
     max-width: 1320px;
     margin-inline: auto;
@@ -274,4 +280,141 @@ img {
 .about-item-no{
     font-size: var(--h2-font-size);
     margin-bottom: 0.125rem;
+}
+
+.service-container{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+.services-card{
+    background: var(--container-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: background 0.3s;
+}
+
+.services-card:hover {
+background: var(--second-gradient);
+}
+
+.services-no{
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+}
+
+.services-title{
+    font-size: var(--h3-font-size);
+    margin-block: 1.25rem 0.75rem;
+}
+
+.services-description{
+    font-size: var(--large-font-size);
+}
+
+.services-card:hover :is(.services-no, .services-title, .services-description) {
+    color: var(--white-color);
+}
+
+.skills-container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 10rem;
+
+}
+
+.skills-title{
+    text-align: center;
+    font-size: var(--h3-font-size);
+    margin-bottom: 3rem;
+}
+
+.skills-items{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.skills-data{
+    text-align: center;
+}
+
+.skills-blob{
+    width: 90px;
+    height: 110px;
+    background-color: var(--container-color);
+    border-radius: 3rem;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+}
+.skills-img{
+    width: 40px;
+}
+
+.skills-name{
+    font-size: var(--large-font-size);
+    margin-block: 1rem 0.25rem;
+}
+
+.skills-level{
+    font-size: var(--small-font-size);
+}
+
+.resume-container{
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.resume-item{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+
+.resume-right{
+    order: 2;
+}
+
+.resume-left{
+    text-align: right;
+}
+
+.resume-icon{
+    color: var(--title-color);
+    font-size: 2.75rem;
+}
+
+.resume-title{
+    font-size: var(--large-font-size);
+    margin-block: 0.75rem;
+}
+
+.resume-duration{
+    font-size: var(--small-font-size);
+}
+
+.resume-container,
+.resume-item {
+    position: relative;
+}
+
+.resume-container::after,
+.resume-item::after {
+    content: '';
+    position: absolute;
+    top:0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--title-color);
+}
+
+.resume-container::after {
+    width: 2px;
+    height: 100%;
+}
+
+.resume-item::after{
+    width: 16px;
+    height: 4px;
 }
