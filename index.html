@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav-logo">Mohit</a>
             <div class="nav-menu">
@@ -348,7 +348,8 @@
                             <h4 class="work-category">Development</h4>
                             <h3 class="work-title">Sei Fun</h3>
 
-                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cupiditate, voluptatum.</p>
                             <a href="" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
                         </article>
                     </div>
@@ -360,7 +361,8 @@
                             <h4 class="work-category">Development</h4>
                             <h3 class="work-title">0xDeVotes</h3>
 
-                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cupiditate, voluptatum.</p>
                             <a href="" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
                         </article>
                     </div>
@@ -372,7 +374,8 @@
                             <h4 class="work-category">Growth</h4>
                             <h3 class="work-title">P2Pdotme</h3>
 
-                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cupiditate, voluptatum.</p>
                             <a href="" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
                         </article>
                     </div>
@@ -384,7 +387,8 @@
                             <h4 class="work-category">Tech & Growth</h4>
                             <h3 class="work-title">Notesea</h3>
 
-                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cupiditate, voluptatum.</p>
                             <a href="" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
                         </article>
                     </div>
@@ -397,86 +401,107 @@
             <div class="contact-container container grid">
                 <div class="contact-group">
                     <h2 class="section-title contact-section-title">
-                       Let's Talk About
-                <br>
-                 your project
-                </h2>
+                        Let's Talk About
+                        <br>
+                        your project
+                    </h2>
 
-                <div class="contact-data grid">
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <i class="ri-mail-open-fill"></i>
-                        </span>
-                        <div>
-                            <h3 class="contact-title">E-mail </h3>
+                    <div class="contact-data grid">
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <i class="ri-mail-open-fill"></i>
+                            </span>
+                            <div>
+                                <h3 class="contact-title">E-mail </h3>
                                 <p class="contact-description">mohit@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <i class="ri-telegram-fill"></i>
-                        </span>
-                        <div>
-                            <h3 class="contact-title">Telegram </h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <i class="ri-telegram-fill"></i>
+                            </span>
+                            <div>
+                                <h3 class="contact-title">Telegram </h3>
                                 <p class="contact-description">@MohitxVegeta</p>
-                            
-                        </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <i class="ri-phone-fill"></i>
-                        </span>
-                        <div>
-                            
-                            <h3 class="contact-title">Phone No</h3>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <i class="ri-phone-fill"></i>
+                            </span>
+                            <div>
+
+                                <h3 class="contact-title">Phone No</h3>
                                 <p class="contact-description">+91 9876541230</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <i class="ri-map-pin-2-fill"></i>
-                        </span>
-                        <div>
-                            
-                            <h3 class="contact-title">Location</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <i class="ri-map-pin-2-fill"></i>
+                            </span>
+                            <div>
+
+                                <h3 class="contact-title">Location</h3>
                                 <p class="contact-description">Jaipur, Rajasthan, India</p>
+                            </div>
                         </div>
+
+
                     </div>
-
-
-                </div>
                 </div>
 
                 <form class="contact-form" id="contact-form">
                     <div class="contact-form-div">
-                        <label class="contact-label">Name</label>
-
-                        <input type="text"  name="name" class="contact-input"/>
+                        <label class="contact-label" for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="user_name" class="contact-input" />
                     </div>
 
                     <div class="contact-form-div">
-                        <label class="contact-label">E-mail</label>
-
-                        <input type="email" name="email" class="contact-input"/>
+                        <label class="contact-label" for="contact-email">E-mail</label>
+                        <input type="email" id="contact-email" name="user_email" class="contact-input" />
                     </div>
 
                     <div class="contact-form-div">
-                        <label class="contact-label">Message</label>
-
-                        <textarea name="message" class="contact-input contact-area"></textarea>
+                        <label class="contact-label" for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" class="contact-input contact-area"></textarea>
                     </div>
+
 
                     <button type="submit" class="button contact-button">Send Message</button>
 
-                    <p class="contact-message" id="message">
-                        <!-- Write all the input fields -->
-                    </p>
+                    <p class="contact-message" id="message"></p>
+
                 </form>
             </div>
         </section>
+
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="footer-social">
+
+                    <a href="https://github.com/0xmoh1t" target="_blank" class="footer-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/0xmoh1t/" target="_blank" class="footer-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+
+                    <a href="https://www.x.com/0xmoh1t/" target="_blank" class="footer-link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                </div>
+            
+
+            <p class="footer-copyright">©
+                2025 <span>Mohit</span>. All Rights Reserved</p>
+            <p class="footer-copyright">Developed by <span>Mohit</span></p>
+            </div>
+        </footer>
 
     </main>
     <!-- =========== GSAP =========== -->
@@ -487,7 +512,10 @@
     <script type="module"
         src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
 
-    <script src="assets/js/mixitup.min.js"></script>    
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <script src="assets/js/script.js"></script>
 </body>
 
