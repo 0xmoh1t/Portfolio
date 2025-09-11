@@ -326,22 +326,22 @@
             </h2>
             <div class="container">
                 <ul class="work-list">
-                    <li class="work-item active-work">
+                    <li class="work-item active-work" data-filter="all">
                         All
                     </li>
-                    <li class="work-item">
+                    <li class="work-item" data-filter=".development">
                         Development
                     </li>
-                    <li class="work-item">
-                        Growth and Branding
+                    <li class="work-item" data-filter=".growth">
+                        Growth
                     </li>
-                    <li class="work-item">
+                    <li class="work-item" data-filter=".extra-curricular">
                         Extra Curricular
                     </li>
                 </ul>
 
                 <div class="work-container grid">
-                    <div>
+                    <div class="mix development">
                         <article class="work-card">
                             <img src="assets/images/PFP.jpg" alt="" class="work-img">
 
@@ -353,7 +353,7 @@
                         </article>
                     </div>
 
-                    <div>
+                    <div class="mix development">
                         <article class="work-card">
                             <img src="assets/images/PFP.jpg" alt="" class="work-img">
 
@@ -365,7 +365,7 @@
                         </article>
                     </div>
 
-                    <div>
+                    <div class="mix growth">
                         <article class="work-card">
                             <img src="assets/images/PFP.jpg" alt="" class="work-img">
 
@@ -377,7 +377,7 @@
                         </article>
                     </div>
 
-                    <div>
+                    <div class="mix extra-curricular">
                         <article class="work-card">
                             <img src="assets/images/PFP.jpg" alt="" class="work-img">
 
@@ -393,6 +393,91 @@
             </div>
         </section>
 
+        <section class="contact section">
+            <div class="contact-container container grid">
+                <div class="contact-group">
+                    <h2 class="section-title contact-section-title">
+                       Let's Talk About
+                <br>
+                 your project
+                </h2>
+
+                <div class="contact-data grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <i class="ri-mail-open-fill"></i>
+                        </span>
+                        <div>
+                            <h3 class="contact-title">E-mail </h3>
+                                <p class="contact-description">mohit@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <i class="ri-telegram-fill"></i>
+                        </span>
+                        <div>
+                            <h3 class="contact-title">Telegram </h3>
+                                <p class="contact-description">@MohitxVegeta</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <i class="ri-phone-fill"></i>
+                        </span>
+                        <div>
+                            
+                            <h3 class="contact-title">Phone No</h3>
+                                <p class="contact-description">+91 9876541230</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <i class="ri-map-pin-2-fill"></i>
+                        </span>
+                        <div>
+                            
+                            <h3 class="contact-title">Location</h3>
+                                <p class="contact-description">Jaipur, Rajasthan, India</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="contact-form-div">
+                        <label class="contact-label">Name</label>
+
+                        <input type="text"  name="name" class="contact-input"/>
+                    </div>
+
+                    <div class="contact-form-div">
+                        <label class="contact-label">E-mail</label>
+
+                        <input type="email" name="email" class="contact-input"/>
+                    </div>
+
+                    <div class="contact-form-div">
+                        <label class="contact-label">Message</label>
+
+                        <textarea name="message" class="contact-input contact-area"></textarea>
+                    </div>
+
+                    <button type="submit" class="button contact-button">Send Message</button>
+
+                    <p class="contact-message" id="message">
+                        <!-- Write all the input fields -->
+                    </p>
+                </form>
+            </div>
+        </section>
+
     </main>
     <!-- =========== GSAP =========== -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -402,6 +487,7 @@
     <script type="module"
         src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
 
+    <script src="assets/js/mixitup.min.js"></script>    
     <script src="assets/js/script.js"></script>
 </body>
 

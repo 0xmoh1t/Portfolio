@@ -12,3 +12,25 @@ gsap.utils.toArray('.text-gradient').forEach((span) => {
     },
     });
 });
+// Mixitup animation
+var mixer = mixitup('.work-container', {
+    selectors: {
+        target: '.mix'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+
+const linkWork = document.querySelectorAll('.work-item');
+
+function activeWork() {
+    linkWork.forEach((a) => {
+        a.classList.remove('active-work');
+    });
+
+    this.classList.add('active-work');
+}
+
+linkWork.forEach((a) => a.addEventListener('click', activeWork))
