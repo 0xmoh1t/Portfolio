@@ -1,3 +1,26 @@
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close');
+
+if(navToggle) {
+    navToggle.addEventListener ('click', () => {
+        navMenu.classList.add('show-menu');
+    });
+}
+
+if(navClose) {
+    navClose.addEventListener ('click', () => {
+        navMenu.classList.remove('show-menu');
+    });
+}
+
+const navLink = document.querySelectorAll('.nav-link');
+
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu');
+
+    namMenu.classList.remove('show-menu');
+};
 
 const scrollHeader = () => {
     const header = document.getElementById('header');
@@ -65,6 +88,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('theme', theme);
     }
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme); 
 
     toggleBtn.addEventListener('click', () => {
         const isLight = document.body.classList.contains('light-theme');
@@ -137,4 +163,21 @@ const sendEmail = (e) => {
 
 
 contactForm.addEventListener('submit', sendEmail);
+
+const sr = ScrollReveal ({
+    origin:'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+});
+
+sr.reveal(`.home-data`);
+sr.reveal(`.home-img-wrapper`, { delay: 500});
+sr.reveal(`.home-social`, { delay: 600});
+sr.reveal(`.services-card, .mix`, { interval: 100 });
+sr.reveal(`.skills-web2, .resume-left, .contact-group`, { origin: 'left' });
+
+sr.reveal(`.skills-web3, .resume-right, .contact-form`, { origin: 'right' });
+// sr.reveal(`.servicer-card`, {interval: 600});
+
 

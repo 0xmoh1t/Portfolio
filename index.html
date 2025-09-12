@@ -13,7 +13,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav-logo">Mohit</a>
-            <div class="nav-menu">
+            <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
 
                     <li class="nav-item"> <a href="#home" class="nav-link active-links">Home</a>
@@ -36,12 +36,12 @@
 
                 </ul>
 
-                <i class="ri-close-line nav-close"></i>
+                <i class="ri-close-line nav-close" id="nav-close"></i>
             </div>
 
             <div class="nav-btns">
                 <i class="ri-sun-line change-theme" id="theme-toggle"></i>
-                <div class="nav-toggle">
+                <div class="nav-toggle" id="nav-toggle">
                     <i class="ri-menu-line"></i>
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <h2 class="section-title">My Skills</h2>
             <div class="skills-container container grid">
                 <!-- Group 1 -->
-                <div class="skills-group">
+                <div class="skills-group skills-web2">
                     <h3 class="skills-title">Web Development</h3>
                     <div class="skills-items grid">
 
@@ -213,7 +213,7 @@
                 </div>
 
                 <!-- Group 2 -->
-                <div class="skills-group">
+                <div class="skills-group skills-web3">
                     <h3 class="skills-title">Blockchain & Web3</h3>
                     <div class="skills-items grid">
 
@@ -515,6 +515,8 @@
     <script src="assets/js/mixitup.min.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
