@@ -284,6 +284,10 @@ img {
     column-gap: 4rem;
 }
 
+.home-social-link i {
+    font-size: 1.35rem; 
+}
+
 .about-experience {
     width: 280px;
     height: 420px;
